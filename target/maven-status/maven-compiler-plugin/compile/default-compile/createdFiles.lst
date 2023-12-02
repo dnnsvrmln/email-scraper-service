@@ -1,11 +1,13 @@
-com/dnnsvrmln/emailscraperservice/entity/CommentEntity.class
 com/dnnsvrmln/emailscraperservice/EmailScraperServiceApplication.class
-com/dnnsvrmln/emailscraperservice/repository/EmailRepository.class
-com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl.class
 com/dnnsvrmln/emailscraperservice/entity/EmailEntity.class
 com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIController.class
-com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl$1.class
 com/dnnsvrmln/emailscraperservice/service/EmailService.class
 com/dnnsvrmln/emailscraperservice/entity/PostEntity.class
 com/dnnsvrmln/emailscraperservice/configuration/SwaggerConfiguration.class
+com/dnnsvrmln/emailscraperservice/controller/EmailScraperController.class
+com/dnnsvrmln/emailscraperservice/entity/CommentEntity.class
+com/dnnsvrmln/emailscraperservice/repository/EmailRepository.class
+com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl.class
+com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl$1.class
+com/dnnsvrmln/emailscraperservice/controller/EmailScraperControllerImpl.class
 com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl$2.class

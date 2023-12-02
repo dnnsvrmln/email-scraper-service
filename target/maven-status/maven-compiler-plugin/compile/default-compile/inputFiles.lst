@@ -1,8 +1,10 @@
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIController.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/entity/PostEntity.java
+/Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/controller/EmailScraperController.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/EmailScraperServiceApplication.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/controller/PlaceholderAPIControllerImpl.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/entity/CommentEntity.java
+/Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/controller/EmailScraperControllerImpl.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/entity/EmailEntity.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/service/EmailService.java
 /Users/dennisvermeulen/Projects/Playgrounds/email-scraper-service/src/main/java/com/dnnsvrmln/emailscraperservice/configuration/SwaggerConfiguration.java
