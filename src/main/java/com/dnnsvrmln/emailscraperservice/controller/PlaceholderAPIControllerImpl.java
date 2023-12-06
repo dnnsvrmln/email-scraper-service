@@ -2,7 +2,9 @@ package com.dnnsvrmln.emailscraperservice.controller;
 
 import com.dnnsvrmln.emailscraperservice.entity.CommentEntity;
 import com.dnnsvrmln.emailscraperservice.entity.PostEntity;
+import com.dnnsvrmln.emailscraperservice.log.Logger;
 import com.dnnsvrmln.emailscraperservice.service.EmailService;
+import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
@@ -26,8 +28,10 @@ public class PlaceholderAPIControllerImpl implements PlaceholderAPIController {
     private EmailService emailService;
 
     @GetMapping("/posts")
-    public ResponseEntity<List<PostEntity>> getPosts() {
+    public ResponseEntity<List<PostEntity>> getPosts(HttpServletRequest request) {
+        Logger.logInfo(request.getRequestURI());
         var url = createUrl("posts");
+
         var response = REST_TEMPLATE.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<List<PostEntity>>() {
         });
 
@@ -35,16 +39,17 @@ public class PlaceholderAPIControllerImpl implements PlaceholderAPIController {
     }
 
     @GetMapping("/posts/{id}")
-    public ResponseEntity<PostEntity> getPost(@PathVariable("id") int id) {
+    public ResponseEntity<PostEntity> getPost(HttpServletRequest request, @PathVariable("id") int id) {
+        Logger.logInfo(request.getRequestURI());
         var url = createUrl("posts/" + id);
 
         var response = REST_TEMPLATE.exchange(url, HttpMethod.GET, null, PostEntity.class);
-
         return ResponseEntity.ok(response.getBody());
     }
 
     @GetMapping("/posts/{postId}/comments")
-    public ResponseEntity<List<CommentEntity>> getCommentsFromPost(@PathVariable("postId") int id) {
+    public ResponseEntity<List<CommentEntity>> getCommentsFromPost(HttpServletRequest request, @PathVariable("postId") int id) {
+        Logger.logInfo(request.getRequestURI());
         var url = createUrl("posts/" + id + "/comments");
 
         var response = REST_TEMPLATE.exchange(url, HttpMethod.GET, null, new ParameterizedTypeReference<List<CommentEntity>>() {

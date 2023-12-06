@@ -22,4 +22,9 @@ public class EmailService {
         emailEntity.setEmail(email);
         emailRepository.save(emailEntity);
     }
+
+    public void deleteAllEmails() {
+        emailRepository.deleteAll();
+    }
+
 }
